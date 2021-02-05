@@ -36,3 +36,8 @@ if __name__ == '__main__':
     ])
     print(border_with_zeros(arr))
 
+    import sys
+
+    print(sys.version)
+
+

@@ -2,7 +2,7 @@ import numpy as np
 
 def normalize(arr):
     '''
-    Takes a numpy array and normalizes it - compressing 
+    Takes a numpy array and normalizes it - compressing
     the values into the range [0, 1]
 
     Example:
@@ -15,7 +15,8 @@ def normalize(arr):
         np.array([0.0, 0.2, 0.4, 0.6, 0.8, 1.0])
     '''
     # your code here!
-    pass
+    arr = arr - np.min(arr)
+    return arr/np.max(arr)
 
 if __name__ == '__main__':
     # Test your code here!
